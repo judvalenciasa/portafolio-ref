@@ -1,0 +1,28 @@
+/*index*/
+:root{
+    --color-fondo-primario: #436696;
+    --color-fondo-segundario: white;
+    --color-fondo-terciario: #e0e5ff;
+
+
+    --color-fuente-titulo: black;
+    --color-fuente-semititulo: black;
+    --color-fuente-parrafo: black;
+
+    --fuente-titulo: inherit;
+    --fuente-semititulo: 'Open-sans', 'sans-serif';
+    --fuente-parrafo: inherit;
+
+    --tamano-fuente-titulo: 1.5rem;
+    --tamano-fuente-semititulo: 1.1rem;
+    --tamano-fuente-parrafo: 1rem;
+
+
+    --radio-borde: 8px; /* Bordes redondeados */
+    --sombra-suave: 0px 4px 6px var(--color-sombra);
+
+
+    /*header*/
+    --tamaño-header-height: 100px;
+    --separacion-section: 5vw;
+}

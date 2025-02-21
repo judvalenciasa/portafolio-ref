@@ -1,0 +1,59 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Eliminar estilos de listas */
+ul, ol, li {
+    list-style: none;
+}
+
+/* Eliminar estilos predeterminados de enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hacer que las imágenes no tengan bordes extra y se adapten */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Restablecer botones */
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Asegurar que los elementos de formulario sean consistentes */
+input, textarea, select, button {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+/* Quitar estilos de encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: var(--tamano-fuente-titulo);
+}
+
+/* Mejor manejo de tablas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+p{
+    font-family: var(--tamano-fuente-parrafo);
+}

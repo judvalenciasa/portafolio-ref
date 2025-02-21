@@ -1,0 +1,231 @@
+@import url("var.css");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 80%;
+  transition: top 0.3s;
+  height: var(--tamaño-header-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header--down {
+  position: fixed;
+  top: 0;
+  z-index: -10;
+}
+
+.main {
+  /*Provisional*/
+  background-color: blueviolet;
+  /*Provisional*/
+
+  position: relative;
+  z-index: 5;
+  width: 80%;
+  top: var(--tamaño-header-height);
+}
+
+.main .main-container {
+  /*Provisional*/
+  background-color: gray;
+  /*Provisional*/
+
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 8%;
+  position: relative;
+  z-index: 5;
+}
+
+/*Section Hero*/
+.main .main-container .hero .container-hero {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  background-color: var(--color-fondo-segundario);
+}
+
+.main .main-container .hero .container-hero .hero-head {
+  width: 40%;
+  margin: 0vw 0vw 0vw 5vw;
+}
+
+.main .main-container .hero .container-hero .hero-head img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-container .hero .container-hero .hero-body {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: 8%;
+}
+
+.main .main-container .hero .container-hero .hero-body .hero-body-infohead {
+  width: 100%;
+}
+
+.main .main-container .hero .container-hero .hero-body .hero-body-infohead ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main
+  .main-container
+  .hero
+  .container-hero
+  .hero-body
+  .hero-body-infohead
+  ul
+  #hero-body-infohead-separador {
+  background-color: black;
+  width: 80%;
+  height: 1px;
+}
+
+.main .main-container .hero .container-hero .hero-body .hero-body-infobody {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: inherit;
+}
+
+.main .main-container .hero .container-hero-footer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-fondo-terciario);
+  height: 5vw;
+}
+
+.main .main-container .hero .container-hero-footer ul li img {
+  width: 3vw;
+  height: 3vw;
+  margin: 0vw 0vw 0vw 0vw;
+}
+
+/*Section Information*/
+.main .main-container .information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--separacion-section);
+  opacity: 0.8;
+  color: white;
+  border-radius: 5vw;
+  background-color: #2c3e50;
+  height: 20vw;
+  padding: 5%;
+}
+
+/*Section tecnologías*/
+.main .main-container .tecnologias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--separacion-section);
+}
+
+.main .main-container .tecnologias ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--separacion-section);
+  width: 80%;
+}
+
+.main .main-container .tecnologias ul li img {
+  width: 8vw;
+  height: 8vw;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease-in-out;
+  animation: flotar 5s infinite ease-in-out;
+}
+
+.main .main-container .tecnologias ul li img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes flotar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  }
+}
+
+
+/*Section conocimientos*/
+.main .main-container .conocimientos {
+  /*Provisional*/
+  background-color: var(--color-fondo-segundario);
+  /*Provisional*/
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--separacion-section);
+}
+
+.main .main-container .conocimientos h1{
+  margin: 5%;
+}
+
+.main .main-container .conocimientos .conocimientos-body{
+  background-color: blueviolet;
+  width: 80%;
+}
+
+.main .main-container .conocimientos .conocimientos-body ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main .main-container .conocimientos .conocimientos-body ul li{
+  width: 30%;
+}
+
+.main .main-container .conocimientos .conocimientos-body ul li .conocimientos-body-box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
