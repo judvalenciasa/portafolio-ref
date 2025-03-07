@@ -1,11 +1,12 @@
 /*index*/
-:root{
+:root {
+  /*
     --color-fondo-primario: #436696;
     --color-fondo-segundario: white;
     --color-fondo-terciario: #e0e5ff;
 
 
-    --color-fuente-titulo: black;
+    --color-fuente-titulo: red;
     --color-fuente-semititulo: black;
     --color-fuente-parrafo: black;
 
@@ -13,16 +14,49 @@
     --fuente-semititulo: 'Open-sans', 'sans-serif';
     --fuente-parrafo: inherit;
 
-    --tamano-fuente-titulo: 1.5rem;
+    --tamano-fuente-titulo: 1.8rem;
     --tamano-fuente-semititulo: 1.1rem;
     --tamano-fuente-parrafo: 1rem;
+*/
 
+  --color-fondo-primario: #436696;
+  --color-fondo-segundario: white;
+  --color-fondo-terciario: #e0e5ff;
 
-    --radio-borde: 8px; /* Bordes redondeados */
-    --sombra-suave: 0px 4px 6px var(--color-sombra);
+  --color-fuente-titulo: black;
+  --color-fuente-semititulo: black;
+  --color-fuente-parrafo: black;
 
+  --fuente-titulo: inherit;
+  --fuente-semititulo: "Open-sans", "sans-serif";
+  --fuente-parrafo: inherit;
 
-    /*header*/
-    --tamaño-header-height: 100px;
-    --separacion-section: 5vw;
+  --tamano-fuente-titulo: 1.8rem;
+  --tamano-fuente-semititulo: 1.1rem;
+  --tamano-fuente-parrafo: 1rem;
+
+  --radio-borde: 8px; /* Bordes redondeados */
+  --sombra-suave: 0px 4px 6px var(--color-sombra);
+
+  /*header*/
+  --tamaño-header-height: 100px;
+  --separacion-section: 5vw;
+}
+
+@media (min-width: 860px) and (max-width: 1051px) {
+  :root {
+    --separacion-section: 10vw;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 860px) {
+  :root {
+    --separacion-section: 12vw;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  :root {
+    --separacion-section: 20vw;
+  }
 }

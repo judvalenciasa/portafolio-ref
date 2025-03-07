@@ -1,0 +1,45 @@
+.bubble {
+    display: inline-block;
+    background-color: var(--color-fondo-primario);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#nombre {
+    display: inline-block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    width: 0;
+    overflow: hidden;
+    background-color: transparent;
+    animation: blink 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--text-length);
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes deleteText {
+    from {
+        width: var(--text-length);
+    }
+    to {
+        width: 0;
+    }
+}

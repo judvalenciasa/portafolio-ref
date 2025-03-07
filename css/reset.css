@@ -42,9 +42,9 @@ input, textarea, select, button {
 }
 
 /* Quitar estilos de encabezados */
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3, h4, h5, h6 {
     font-weight: normal;
-    font-family: var(--tamano-fuente-titulo);
+    font-family: var(--fuente-parrafo);
 }
 
 /* Mejor manejo de tablas */
@@ -54,5 +54,5 @@ table {
 }
 
 p{
-    font-family: var(--tamano-fuente-parrafo);
+    font-family: var(--fuente-parrafo);
 }
